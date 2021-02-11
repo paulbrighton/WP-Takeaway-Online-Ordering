@@ -5,6 +5,7 @@ import 'slick-carousel'
 import './components/aos'
 import './components/accordion'
 import './components/slider'
+import './components/gloria-food'
 // import webpackStream from 'webpack-stream'
 
 $(document).ready(() => {

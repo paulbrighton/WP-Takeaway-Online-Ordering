@@ -1,11 +1,9 @@
 .c-header {
   padding: rem-calc(10) 0;
-  color: $brand;
-  // height: 70px;
   align-items: center;
 
   &__main {
-    background-color: #0146A9;
+    background-color: $dark-grey;
   }
 
   &__blogname {
@@ -18,6 +16,53 @@
     font-size: rem-calc(20);
     img {
       max-width: 200px;
+    }
+  }
+
+  &__orders {
+    &-container {
+      display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    }
+    color: $white;
+    text-align: center;
+    font-size: rem-calc(14);
+    @media (max-width: 959px) {
+      display: none;
+    }
+
+    &-phone {
+      &--mobile {
+        padding-right: 10px;
+      }
+    }
+
+    .glf-btn-basic {
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+
+    &--mobile {
+      display: none;
+      @media (max-width: 600px) {
+        width: 100%;
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $white;
+        border-top: 1px solid $medium-grey;
+      }
+      @media (max-width: 1023px) {
+        width: 100%;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: center;
+        color: $white;
+        border-top: 1px solid $medium-grey;
+      }
     }
   }
 }
