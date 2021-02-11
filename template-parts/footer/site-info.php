@@ -5,7 +5,7 @@ $built_by_info = get_theme_mod('_themename_built_by_info', '');
 
 <?php if ($site_info) { ?>
   <div class="c-site-info">
-    <div class="o-container">
+    <div class="o-container--full">
       <div class="o-row">
         <div class="o-col o-col-6@small c-site-info__text">
           <?php
