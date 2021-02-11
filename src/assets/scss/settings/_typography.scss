@@ -105,9 +105,25 @@ $header-styles: (
        url('../fonts/oxygen-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+
+/* oxygen-700 - latin */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/oxygen-v10-latin-700.woff2') format('woff2'),
+       url('../fonts/oxygen-v10-latin-700.woff') format('woff'),
+}
+
 @mixin font-body() {
   font-family: "Oxygen", sans-serif;
   font-weight: 400 !important;
+}
+
+@mixin font-body-bold() {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700 !important;
 }
 
 @mixin font-bold() {
