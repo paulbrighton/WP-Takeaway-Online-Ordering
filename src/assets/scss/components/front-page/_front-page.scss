@@ -1,0 +1,444 @@
+// .c-front-page {
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5 {
+//     color: $brand;
+//   }
+//   #cff .cff-item.cff-box, #cff .cff-item.cff-box:first-child {
+//     margin: 0;
+//   }
+// }
+
+// .c-selection {
+//   padding: 100px 10px;
+// }
+
+// .c-our-food {
+//   padding: 100px 10px;
+// }
+
+// .c-who-we-are,
+// .c-our-food,
+// .c-customize {
+//   margin-top: 100px;
+//   margin-bottom: 100px;
+
+//   &__image {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin: auto;
+
+//     img {
+//       width: 100%;
+//       height: auto;
+//     }
+//   }
+
+//   &__text-body {
+//     p:last-child {
+//       margin-bottom: 0;
+//     }
+//   }
+// }
+
+// .c-customize__text-body {
+//   margin-bottom: 25px;
+// }
+
+// .c-sweet-treats,
+// .c-savoury-snacks {
+//   display: flex;
+
+//   &__text {
+//     width: 50%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     &-container {
+//       display: flex;
+//       flex-direction: column;
+//       width: 75%;
+//     }
+//   }
+
+//   &__image {
+//     width: 50%;
+//   }
+// }
+
+// .c-brand {
+//   background: $black;
+//   margin: 0;
+//   padding: 0;
+
+//   &-info {
+//     padding: 3.125rem 0;
+
+//     &__container {
+//       padding: 0 rem-calc(10);
+//     }
+
+//     &__social {
+//       &-icons {
+//         display: flex;
+//         flex-wrap: wrap;
+//       }
+
+//       &-logo {
+//         width: 50px;
+//         height: auto;
+//       }
+//     }
+
+//     &__logo {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+
+//       img {
+//         width: 100px;
+//         height: 100px;
+//       }
+//     }
+
+//     &__contact {
+//       &-text {
+//         width: 100%;
+//       }
+
+//       p {
+//         color: $white;
+//         &:nth-last-child(1) {
+//           margin-bottom: 0;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .c-social-container {
+//   padding: 50px 0 70px;
+// }
+
+// @media only screen and (max-width: 767px) {
+//   .c-who-we-are {
+//     &__image {
+//       margin-top: 50px;
+
+//       img {
+//         width: 100%;
+//         max-width: 960px;
+//         height: auto;
+//       }
+//     }
+//   }
+
+//   .c-selection {
+//     padding: 70px 10px;
+
+//     h3 {
+//       font-size: rem-calc(30);
+//     }
+//   }
+
+//   .c-who-we-are,
+//   .c-our-food {
+//     margin-top: 50px;
+//     margin-bottom: 70px;
+
+//     &__text-body {
+//       p:last-child {
+//         margin-bottom: 0;
+//       }
+//     }
+//   }
+
+//   .c-our-food {
+//     padding: 70px 0;
+
+//     &__image {
+//       margin-bottom: 70px;
+//     }
+//   }
+
+//   .c-customize {
+//     margin: 70px 0;
+//     &__text {
+//       margin-bottom: 50px;
+//     }
+//     .c-button--customize {
+//       margin-bottom: 20px;
+//     }
+//   }
+
+//   .c-sweet-treats,
+//   .c-savoury-snacks {
+//     display: flex;
+//     flex-direction: column-reverse;
+
+//     &__text {
+//       width: 100%;
+//       padding: 100px 0;
+//     }
+
+//     &__image {
+//       width: 100%;
+//     }
+//   }
+
+//   .c-savoury-snacks {
+//     background: $brand-cream;
+//   }
+
+//   .c-brand {
+//     text-align: center;
+
+//     h5 {
+//       margin-bottom: rem-calc(25);
+//       font-size: rem-calc(25);
+//     }
+  
+//     &-info {
+//       padding: 3.125rem 0;
+  
+//       &__container {
+//         padding: 0 rem-calc(30);
+//       }
+  
+//       &__social {
+//         &-icons {
+//           display: flex;
+//           justify-content: center;
+//           flex-wrap: wrap;
+//         }
+  
+//         &-logo {
+//           width: 50px;
+//           height: auto;
+//         }
+//       }
+  
+//       &__logo {
+//         justify-content: center;
+//         margin: 70px 10px;
+  
+//         img {
+//           width: 100px;
+//           height: 100px;
+//         }
+//       }
+  
+//       &__contact {
+//         &-text {
+//           width: 100%;
+//         }
+  
+//         p {
+//           color: $white;
+//           &:nth-last-child(1) {
+//             margin-bottom: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 768px) and (max-width: 959px) {
+//   .c-who-we-are {
+//     &__image {
+//       margin-top: 50px;
+
+//       img {
+//         width: 75%;
+//         height: auto;
+//       }
+//     }
+//   }
+
+//   .c-our-food {
+//     display: flex;
+//     justify-content: center;
+//     h2 {
+//       text-align: center;
+//     }
+//     &__image {
+//       margin-top: 0;
+
+//       img {
+//         width: 75%;
+//         height: auto;
+//       }
+//     }
+
+//     &__text {
+//       margin-bottom: 0;
+
+//       &-body {
+//         width: 85%;
+//         margin: 0 auto;
+//       }
+//     }
+//   }
+
+//   .c-selection {
+//     padding: 70px 10px;
+
+//     h3 {
+//       font-size: rem-calc(30);
+//     }
+
+//     &__card {
+//       margin-bottom: 25px;
+//       &:last-of-type {
+//         margin-bottom: 0;
+//       }
+//     }
+//   }
+
+//   .c-who-we-are,
+//   .c-our-food,
+//   .c-customize {
+//     margin-top: 50px;
+//     margin-bottom: 70px;
+
+//     &__text-body {
+//       p:last-child {
+//         margin-bottom: 0;
+//       }
+//     }
+//   }
+
+//   .c-our-food {
+//     padding: 70px 0;
+
+//     &__image {
+//       margin-bottom: 50px;
+//     }
+//   }
+
+//   .c-customize,
+//   .c-who-we-are {
+//     display: flex;
+//     justify-content: center;
+//     h1, h2 {
+//       text-align: center;
+//     }
+
+//     &__text {
+//       margin-bottom: 50px;
+
+//       &-body {
+//         width: 85%;
+//         margin: 0 auto;
+//       }
+//     }
+
+//     &__image {
+//       width: 50%;
+//     }
+//     .c-button__container {
+//       display: flex;
+//       justify-content: center;
+//       margin-top: 25px;
+//     }
+//   }
+
+//   .c-who-we-are {
+//     display: flex;
+//     justify-content: center;
+//     h1 {
+//       text-align: center;
+//     }
+
+//     &__text {
+//       margin-bottom: 50px;
+
+//       &-body {
+//         width: 85%;
+//         margin: 0 auto;
+//       }
+//     }
+
+//     &__image {
+//       width: 75%;
+//       margin-top: 0;
+//     }
+//   }
+
+//   .c-sweet-treats,
+//   .c-savoury-snacks {
+//     display: flex;
+//     flex-direction: column-reverse;
+
+//     &__text {
+//       width: 100%;
+//       padding: 100px 0;
+//     }
+
+//     &__image {
+//       width: 100%;
+//       display: flex;
+//       justify-content: center;
+//     }
+//   }
+
+//   .c-savoury-snacks {
+//   }
+
+//   .c-brand {
+//     text-align: center;
+
+//     h5 {
+//       margin-bottom: rem-calc(20);
+//     }
+
+//     &-info {
+//       padding: 3.125rem 0;
+
+//       &__container {
+//         padding: 0 rem-calc(30);
+//       }
+
+//       &__social {
+//         &-icons {
+//           display: flex;
+//           justify-content: center;
+//           flex-wrap: wrap;
+//         }
+
+//         &-logo {
+//           width: 50px;
+//           height: auto;
+//         }
+//       }
+
+//       &__logo {
+//         justify-content: center;
+//         margin: 70px 10px;
+
+//         img {
+//           width: 100px;
+//           height: 100px;
+//         }
+//       }
+
+//       &__contact {
+//         &-text {
+//           width: 100%;
+//         }
+
+//         p {
+//           color: $white;
+//           &:nth-last-child(1) {
+//             margin-bottom: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

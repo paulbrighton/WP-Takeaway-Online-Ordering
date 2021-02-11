@@ -1,0 +1,77 @@
+.glf-mor-restaurant-menu-wrapper {
+  padding: 50px 20px 70px;
+  @media (max-width: 767px) {
+    padding: 50px 10px 70px;
+  }
+  @media (min-width: 1240px) {
+    padding: 50px 0 70px;
+  }
+}
+
+.glf-mor-restaurant-menu-wrapper .glf-mor-restaurant-menu-category {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.glf-mor-restaurant-menu-item {
+  margin-bottom: 0 !important;
+  flex: 0 0 50%;
+  display: flex;
+
+  &-header h5 {
+    margin: 0 35px 0 0 !important;
+    font-size: 1.25rem;
+  }
+}
+
+.glf-mor-restaurant-menu-item-inner {
+  border-bottom: 1px solid #eee;
+  padding: 1.5rem 0;
+  flex: 0 0 100%;
+}
+
+.glf-mor-restaurant-menu-wrapper .glf-mor-restaurant-menu-category .glf-mor-restaurant-menu-item:nth-of-type(2n+1) {
+  padding-right: 4rem;
+}
+
+.glf-mor-restaurant-menu-wrapper .glf-mor-restaurant-menu-category .glf-mor-restaurant-menu-item:nth-of-type(2n+2) {
+  padding-left: 4rem;
+}
+
+.glf-mor-restaurant-menu-wrapper .glf-mor-restaurant-menu-category h3 {
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  flex: 0 0 100%;
+}
+
+.glf-mor-restaurant-menu-item-name {
+  margin-bottom: 0;
+}
+
+.glf-mor-restaurant-menu-item-price {
+  @include font-italic;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.glf-mor-restaurant-menu-item-description {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #6f6f6f;
+}
+
+@media (max-width: 767px) {
+  .glf-mor-restaurant-menu-item {
+      flex: 0 0 100%;
+  }
+
+  .glf-mor-restaurant-menu-wrapper .glf-mor-restaurant-menu-category .glf-mor-restaurant-menu-item:nth-of-type(2n+1) {
+      padding-right: 0;
+  }
+
+  .glf-mor-restaurant-menu-wrapper .glf-mor-restaurant-menu-category .glf-mor-restaurant-menu-item:nth-of-type(2n+2) {
+      padding-left: 0;
+  }
+}

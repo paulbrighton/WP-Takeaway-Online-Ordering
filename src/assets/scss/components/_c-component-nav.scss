@@ -1,0 +1,26 @@
+.c-component-nav {
+  width: 80%;
+  margin-top: 20px;
+  .menu-component-menu-container {
+    ul {
+      list-style-type: none;
+      margin-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    li {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        @include font-bold;
+        border: 1px solid $brand;
+        border-radius: 5px;
+        padding: 5px 20px;
+      }
+    }
+  }
+}

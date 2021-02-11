@@ -1,0 +1,65 @@
+.c-accordion {
+  width: 80%;
+  @media (max-width: 959px) {
+    width: 100%;
+  }
+  margin: 0 auto;
+  &--expand {
+    display: block;
+    text-decoration: none;
+    color: #555;
+    cursor: pointer;
+  }
+
+  &__btn {
+    padding-top: 0;
+    margin-top: 0;
+    width: 8px;
+    font-size: 0.5rem;
+    height: 100%;
+    float: right;
+    font-size: 20px;
+  }
+
+  &__header {
+    padding: 5px;
+    margin: 0;
+    font-size: 1.25rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      margin-bottom: 0;
+      margin-top: 100px;
+    }
+  }
+
+  &__body {
+    display: none;
+    padding: 20px 15px;
+  }
+
+  ul {
+    margin-left: 0;
+    color: #555;
+    &:last-child {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  li {
+    list-style: none;
+    border-top: 1px solid #ddd;
+    display: block;
+    padding: 15px;
+    overflow: hidden;
+    margin-bottom: 0;
+    &:hover {
+      background: #efefef;
+    }
+  }
+
+  a {
+    text-align: center;
+  }
+}

@@ -1,0 +1,383 @@
+/* See bottom for nav with sub menu items */
+.c-header__nav {
+  color: $brand-darker;
+
+  &--mobile {
+    display: flex;
+    justify-content: flex-end;
+    font-size: rem-calc(20);
+    .menu-primary-menu-container {
+      ul {
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+  }
+
+  &--desktop {
+    height: 70px;
+    display: none;
+
+    .menu-primary-menu-container {
+      width: 100%;
+
+      ul {
+        padding: 0;
+        margin: 0;
+        padding-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+          list-style: none;
+          margin-left: 20px;
+          a {
+            color: $white;
+            @include font-bold;
+            text-transform: capitalize;
+
+            &:hover {
+              color: $brand;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .c-header__nav {
+      &--mobile {
+        display: none;
+      }
+
+      &--desktop {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
+  }
+}
+
+// Overlay for mobile menu
+.openbtn {
+  font-size: rem-calc(24);
+  cursor: pointer;
+  color: $brand-darker;
+  position: relative;
+
+  &:hover {
+    color: $medium-grey;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.93);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  @include font-bold;
+  font-size: rem-calc(26);
+  color: $brand-darker;
+  display: block;
+  transition: 0.3s;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: $medium-grey;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  font-size: rem-calc(30);
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: rem-calc(20);
+  }
+  .overlay .closebtn {
+    font-size: rem-calc(20);
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* Updated version below that includes sub menu items to 2 levels deep */
+
+// .c-header__nav {
+//   color: $black;
+
+//   &--mobile {
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: center;
+//     font-size: rem-calc(18);
+//     .sub-menu a {
+//       font-size: rem-calc(16);
+//     }
+
+//     .c-header__icon--mobile {
+//       font-size: rem-calc(15);
+//       margin-right: 15px;
+//       color: $black;
+//     }
+
+//     .menu-primary-menu-container {
+//       ul {
+//         li {
+//           list-style-type: none;
+//         }
+//       }
+//     }
+//   }
+
+//   &--desktop {
+//     width: 100%;
+//     display: none;
+//     align-items: center;
+
+//     .nav {
+//       display: flex;
+//       justify-content: right;
+//     }
+
+//     .navigation-main {
+//       margin: 0;
+//       padding: 0;
+//       margin-bottom: auto;
+//       list-style: none;
+//       width: 100%;
+//       display: flex;
+//       flex-wrap: wrap;
+//       justify-content: space-around;
+//       align-items: center;
+
+//       ul {
+//         margin: 0;
+//         padding: 0;
+//         list-style: none;
+//         position: absolute;
+//         left: -999em;
+//       }
+
+//       li {
+//         display: inline-block;
+//         position: relative;
+//         text-align: left;
+//         margin-bottom: 0;
+
+//         &.focus,
+//         &:hover {
+//           > ul {
+//             left: auto;
+//             right: 0;
+//             padding-top: 10px; /* Use same padding top as padding for header to make level with bottom of div */
+//           }
+//         }
+
+//         li {
+//           display: block;
+//           padding-top: 1px;
+//           border-bottom: 1px solid $brand-lighter;
+
+//           &.focus,
+//           &:hover {
+//             > ul {
+//               left: 100%;
+//               top: 0;
+//             }
+//           }
+//         }
+//       }
+
+//       a {
+//         @include font-bold;
+//         font-size: 1rem;
+//         color: $black;
+//         text-decoration: none;
+//         display: block;
+//         white-space: nowrap;
+//         padding: 10px 15px;
+//       }
+
+//       .sub-menu li {
+//         a {
+//           color: $brand;
+//           &:hover {
+//             color: $black;
+//           }
+//         }
+//       }
+
+//       a:hover,
+//     li:hover > a,
+//     .focus > a,
+//     .current-menu-item > a,
+//     .current-menu-ancestor > a {
+//         color: $brand;
+//       }
+
+//       // Submenu styles
+//       ul {
+//         background-color: rgba(255, 255, 255, 0.9);
+//         display: block;
+//       }
+
+//       // First level item arrows
+//       .menu-item-has-children {
+//         z-index: 1;
+//         > a {
+//           &::before {
+//             content: "";
+//             position: absolute;
+//             right: 0;
+//             top: 60%;
+//             transform: translateY(-50%);
+//             border: 4px solid transparent;
+//             border-top-color: currentColor;
+//           }
+//         }
+//         a {
+//           padding-bottom: 10px;
+//         }
+//       }
+
+//       // Second level item arrows
+//       ul {
+//         .menu-item-has-children {
+//           > a {
+//             &::before {
+//               right: 2px;
+//               border-top-color: transparent;
+//               border-left-color: currentColor;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 960px) {
+//   .c-header__nav {
+//     &--mobile {
+//       display: none;
+//     }
+
+//     &--desktop {
+//       display: flex;
+//       justify-content: flex-end;
+//       align-items: center;
+//     }
+//   }
+// }
+
+// .c-header__icons {
+//   display: flex;
+//   justify-content: flex-end;
+//   @media (max-width: 959px) {
+//     display: none;
+//   }
+// }
+
+// .c-header__icon {
+//   margin-left: 15px;
+//   color: $black;
+//   &:hover {
+//     cursor: pointer;
+//     color: $brand;
+//   }
+// }
+
+// // Overlay for mobile menu
+// .openbtn {
+//   font-size: rem-calc(18);
+//   cursor: pointer;
+//   color: $black;
+//   position: relative;
+
+//   &:hover {
+//     color: $brand;
+//   }
+// }
+
+// .overlay {
+//   height: 100%;
+//   width: 0;
+//   position: fixed;
+//   z-index: 1;
+//   top: 0;
+//   left: 0;
+//   background-color: rgba(255, 255, 255, 0.93);
+//   overflow-x: hidden;
+//   transition: 0.5s;
+// }
+
+// .overlay-content {
+//   position: relative;
+//   top: 25%;
+//   width: 100%;
+//   text-align: center;
+//   margin-top: 30px;
+// }
+
+// .overlay a {
+//   padding: 8px;
+//   text-decoration: none;
+//   @include font-bold;
+//   font-size: rem-calc(26);
+//   color: $black;
+//   display: block;
+//   transition: 0.3s;
+//   text-transform: capitalize;
+// }
+
+// .overlay a:hover,
+// .overlay a:focus {
+//   color: $brand;
+// }
+
+// .overlay .closebtn {
+//   position: absolute;
+//   top: 45px;
+//   right: 10px;
+//   font-size: rem-calc(30);
+// }
+
+// @media screen and (max-height: 450px) {
+//   .overlay a {
+//     font-size: rem-calc(20);
+//   }
+//   .overlay .closebtn {
+//     font-size: rem-calc(20);
+//     top: 15px;
+//     right: 35px;
+//   }
+// }

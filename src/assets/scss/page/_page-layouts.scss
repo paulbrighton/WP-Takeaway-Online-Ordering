@@ -1,0 +1,254 @@
+// Text with Image Right
+.c-text-img-right {
+  padding: 75px 0;
+  @media (max-width: 959px) {
+    padding: 50px 0 70px;
+  }
+  align-items: center;
+  @include font-bold;
+  &__text {
+    @media (max-width: 959px) {
+      text-align: center;
+      padding-bottom: 70px;
+    }
+    p {
+      font-size: 1.125rem;
+      padding-right: 20px;
+      hyphens: none;
+      @media (max-width: 959px) {
+        padding: 0 20px;
+      }
+      @media (max-width: 767px) {
+        padding: 0;
+      }
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+    h3 {
+      font-size: 1.5rem;
+      color: $dark-grey;
+      margin-bottom: 0;
+      @media (max-width: 959px) {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+// Text with Image Left
+.c-text-img-left {
+  padding: 75px 0;
+  @media (max-width: 959px) {
+    padding: 50px 0 70px;
+  }
+  align-items: center;
+  @include font-bold;
+  &__text {
+    @media (max-width: 959px) {
+      text-align: center;
+      padding-bottom: 70px;
+    }
+    p {
+      font-size: 1.125rem;
+      padding-left: 20px;
+      hyphens: none;
+      @media (max-width: 959px) {
+        padding: 0 20px;
+      }
+      @media (max-width: 767px) {
+        padding: 0;
+      }
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+    h3 {
+      font-size: 1.5rem;
+      color: $dark-grey;
+      text-align: left;
+      margin-bottom: 0;
+      @media (max-width: 959px) {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+.c-selection {
+  padding: 1.25rem 0;
+
+  &__container {
+    @media (max-width: 767px) {
+      margin: 0;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: $white;
+    padding: 2.25rem 1.25rem;
+    border: 1px solid $brand-lighter;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    @media (min-width: 960px) {
+      margin-bottom: 0;
+    }
+
+    &-title {
+      margin: 0;
+    }
+
+    &-text {
+      margin-bottom: 25px;
+      @include font-body;
+
+      @media (max-width: 767px) {
+        padding: 0;
+      }
+
+      @media (max-width: 959px) {
+        padding: 0 150px;
+      }
+    }
+
+    p {
+      flex: 1 0 auto;
+    }
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      min-height: 125px;
+      padding-top: 10px;
+
+      img {
+        width: 75px;
+        height: auto;
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .c-selection {
+    &__card {
+      margin-bottom: rem-calc(40);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      p {
+        flex: 1 0 auto;
+        padding: 0 25px;
+      }
+
+      &-icon {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+// <!-- Full Width Image with Text -->
+.c-full-width-text-img {
+  display: flex;
+
+  &__text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+    }
+  }
+
+  &__image {
+    width: 50%;
+  }
+}
+
+// <!-- Full Width Image with Text Reversed -->
+.c-full-width-text-img-reversed {
+  display: flex;
+  flex-direction: row-reverse;
+
+  &__text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+    }
+  }
+
+  &__image {
+    width: 50%;
+  }
+}
+
+.c-button--full-width-text {
+  display: block;
+  width: 300px;
+  max-width: 300px;
+  margin-top: 10px;
+  position: relative;
+  padding: 5px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+
+  border: 1px solid $brand-lighter;
+  background-image: linear-gradient(-180deg, $brand-darker 0%, $brand 100%);
+  &:hover {
+    cursor: pointer;
+    background-image: linear-gradient(-180deg, $brand 0%, $brand-darker 100%);
+    color: $white;
+  }
+}
+
+@media (max-width: 959px) {
+  .c-full-width-text-img {
+    padding-top: 0;
+  }
+
+  .c-full-width-text-img-reversed {
+    padding-bottom: 0;
+  }
+  .c-full-width-text-img,
+  .c-full-width-text-img-reversed {
+    display: flex;
+    flex-direction: column-reverse;
+
+    &__text {
+      width: 80%;
+      margin: 0 auto;
+      padding: 70px 0;
+    }
+
+    &__image {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      // width: 768px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.c-header {
+  padding: rem-calc(10) 0;
+  color: $brand;
+  // height: 70px;
+  align-items: center;
+
+  &__main {
+    background-color: #0146A9;
+  }
+
+  &__blogname {
+    color: $brand;
+    &:hover {
+      color: $brand-lighter;
+    }
+  }
+  &__logo {
+    font-size: rem-calc(20);
+    img {
+      max-width: 200px;
+    }
+  }
+}

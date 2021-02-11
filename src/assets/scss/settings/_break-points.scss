@@ -1,0 +1,21 @@
+$breakpoints: (
+    xsmall: 0,
+    small: 768px,
+    medium: 960px,
+    large: 1024px,
+    xlarge: 1200px,
+);
+
+/// @param {String} $breakpoint
+/// @require $breakpoints
+@mixin break-at($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+      @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+      }
+    }
+    @else {
+      @warn "Sorry, no value could be found in `#{$breakpoint}`. "
+            + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+  }

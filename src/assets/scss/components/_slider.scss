@@ -1,0 +1,119 @@
+.slick-slide {
+  outline: none
+}
+
+.c-slider__header {
+  text-align: center;
+}
+
+.c-slider--dots {
+  max-width: 500px;
+  margin: 0 auto;
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.625rem 0 1.25rem;
+    list-style-type: none;
+  
+    li {
+      margin: 0 0.3125rem;
+      color: $brand;
+    }
+  
+    button {
+      display: block;
+      background-color: $brand;
+      width: 0.875rem;
+      height: 0.875rem;
+      padding: 0;
+      border: none;
+      border-radius: 100%;
+      text-indent: -9999px;
+    }
+  
+    li.slick-active button {
+      background-color: rgba($color: $brand-orange, $alpha: 0.3);
+    }
+  }
+}
+
+.c-slider--arrows-inside {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  .slick-prev-inside, .slick-next-inside {
+    font-size: 1.25rem;
+    color: $white;
+    &:hover {
+      color: $brand-darker;
+    }
+    &:focus {
+      outline: none;
+      color: $brand-darker;
+    }
+  }
+  .slick-next-inside {
+    margin-left: -20px;
+    z-index: 1;
+  }
+  .slick-prev-inside {
+    margin-right: -20px;
+    z-index: 1;
+  }
+}
+
+.c-slider--arrows-outside {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  .slick-next, .slick-prev {
+    font-size: 1.25rem;
+    color: $brand;
+    margin: 0 10px;
+    &:focus {
+      outline: none;
+      color: $brand-darker;
+    }
+  }
+}
+
+.c-slider--overflow {
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.625rem 0 1.25rem;
+    list-style-type: none;
+  
+    li {
+      margin: 0 0.3125rem;
+      color: $brand;
+    }
+  
+    button {
+      display: block;
+      background-color: $brand;
+      width: 0.875rem;
+      height: 0.875rem;
+      padding: 0;
+      border: none;
+      border-radius: 100%;
+      text-indent: -9999px;
+      &:focus {
+        outline: none;
+        color: $brand-darker;
+      }
+    }
+  
+    li.slick-active button {
+      background-color: rgba($color: $brand-orange, $alpha: 0.3);
+    }
+  }
+}

@@ -1,0 +1,164 @@
+// <!-- Markup for cf7 for multi column form -->
+
+// <!-- <div class="c-cf7form__inputs">
+//   <div class="c-cf7form__input">
+//     <label> Name
+//       [text* your-name] </label>
+//   </div>
+//   <div class="c-cf7form__input">
+//     <label> Email
+//       [email* your-email] </label>
+//   </div>
+//   <div class="c-cf7form__input">
+//     <label> Subject
+//       [text* your-subject] </label>
+//   </div>
+// </div>
+
+// <label> Message
+//     [textarea your-message 40x5] </label>
+
+// [submit "Submit"] -->
+
+/* ------------------------------------------- */
+
+// HTML and PHP markup for contact forms
+// 
+// <!-- Multi column layout with minimal styling -->
+// <div class="c-contact-form">
+//   <div class="o-container">
+//     <h1>Contact Form 1</h1>
+//     <p class="c-contact-form-subtitle">Three column for name, email and subject.</p>
+//     <?php echo do_shortcode('[contact-form-7 id="113" title="Contact form 1"]') ?>
+//   </div>
+// </div>
+// 
+// <!-- Single column layout with minimal styling -->
+// <div class="c-contact-form--full-width" id="contact-form">
+//   <div class="o-container">
+//     <h2>Contact Form 2</h2>
+//     <p class="c-contact-form--full-width-subtitle">Equal width contact form.</p>
+//     <div class="c-contact-form--full-width__container">
+//       <?php echo do_shortcode('[contact-form-7 id="114" title="Contact Form 2"]'); ?>
+//     </div>
+//   </div>
+// </div>
+
+
+// 3 column inputs for name, email and subject
+.c-contact-form {
+  color: $dark-grey;
+  padding: 50px 0;
+  background: $white;
+  h1 {
+    margin-bottom: 10px;
+  }
+  &-subtitle {
+    margin-bottom: 50px;
+    padding-left: 5px;
+  }
+  input,
+  textarea {
+    margin-top: 15px;
+    background: $white;
+    outline: none;
+    color: $dark-grey;
+    border-radius: 5px;
+    border: 1px solid $dark-grey !important;
+    &:focus {
+      background-color: $white;
+    }
+  }
+
+  .c-cf7form__inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 25px;
+    @media (max-width: 767px) {
+      display: block;
+    }
+    .c-cf7form__input {
+      width: 32%;
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+  .wpcf7-form-control .wpcf7-text .wpcf7-validates-as-required {
+    background: $white !important;
+  }
+  button,
+  input[type="submit"] {
+    padding: 10px 45px !important;
+    &:hover {
+      color: $white !important;
+    }
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s;
+    -webkit-text-fill-color: $dark-grey !important;
+  }
+}
+
+// Full width form
+.c-contact-form--full-width {
+  color: $dark-grey;
+  padding: 0 0 50px;
+  h2 {
+    margin-bottom: 10px;
+  }
+  &-subtitle {
+    margin-bottom: 50px;
+    padding-left: 5px;
+  }
+
+  &__container {
+    padding: 0 150px;
+    @media (max-width: 959px) {
+      padding: 0 50px;
+    }
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+    margin: 0 auto;
+  }
+  input,
+  textarea {
+    margin-top: 5px;
+    outline: none;
+    color: $dark-grey;
+    border-radius: 5px;
+    border: 1px solid $dark-grey !important;
+  }
+
+  .c-cf7form__inputs {
+    width: 100%;
+    margin-bottom: 25px;
+    @media (max-width: 767px) {
+      display: block;
+    }
+    .c-cf7form__input {
+      width: 100%;
+    }
+    .wpcf7-form-control .wpcf7-submit {
+      color: $dark-grey;
+      &hover {
+        color: $white !important;
+      }
+    }
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s;
+    -webkit-text-fill-color: $dark-grey !important;
+  }
+}

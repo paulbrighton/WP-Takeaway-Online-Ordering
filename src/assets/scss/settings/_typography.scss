@@ -1,0 +1,122 @@
+$header-font-family: $header-font-family !default;
+$header-font-weight: $header-weight-normal !default;
+$header-font-style: normal !default;
+$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace !default;
+$font-family-serif: "serif" !default;
+$header-color: inherit !default;
+$header-lineheight: 1.2 !default;
+$header-margin-bottom: 1.875rem !default;
+$small-font-size: 80% !default;
+
+$header-small-font-color: #333333 !default;
+$paragraph-lineheight: 1.5 !default;
+$paragraph-margin-bottom: 1rem !default;
+
+$header-styles: (
+  xsmall: (
+    "h1": (
+      "font-size": 40,
+    ),
+    "h2": (
+      "font-size": 32,
+    ),
+    "h3": (
+      "font-size": 24,
+    ),
+    "h4": (
+      "font-size": 22,
+    ),
+    "h5": (
+      "font-size": 20,
+    ),
+    "h6": (
+      "font-size": 16,
+    ),
+  ),
+  small: (
+    "h1": (
+      "font-size": 40,
+    ),
+    "h2": (
+      "font-size": 35,
+    ),
+    "h3": (
+      "font-size": 28,
+    ),
+    "h4": (
+      "font-size": 25,
+    ),
+    "h5": (
+      "font-size": 20,
+    ),
+    "h6": (
+      "font-size": 18,
+    ),
+  ),
+  large: (
+    "h1": (
+      "font-size": 44,
+    ),
+    "h2": (
+      "font-size": 40,
+    ),
+    "h3": (
+      "font-size": 32,
+    ),
+    "h4": (
+      "font-size": 23,
+    ),
+    "h5": (
+      "font-size": 20,
+    ),
+    "h6": (
+      "font-size": 18,
+    ),
+  ),
+) !default;
+
+/* ubuntu-500italic - latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/ubuntu-v15-latin-500italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/ubuntu-v15-latin-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ubuntu-500 - latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/ubuntu-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/ubuntu-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* oxygen-regular - latin */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/oxygen-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/oxygen-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@mixin font-body() {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400 !important;
+}
+
+@mixin font-bold() {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500 !important;
+}
+
+@mixin font-italic() {
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  font-weight: 500 !important;
+}
