@@ -40,8 +40,13 @@
     }
 
     .glf-btn-basic {
-      text-decoration: none;
-      text-transform: capitalize;
+      background: transparent;
+      padding: 0;
+      color: $brand;
+      text-transform: capitalize !important;
+      &:hover {
+        color: $brand-red;
+      }
     }
 
     &--mobile {
@@ -62,6 +67,16 @@
         justify-content: center;
         color: $white;
         border-top: 1px solid $medium-grey;
+      }
+
+      .glf-btn-basic {
+        background: transparent;
+        padding: 0;
+        color: $brand;
+        text-transform: capitalize !important;
+        &:hover {
+          color: $brand-red;
+        }
       }
     }
   }
