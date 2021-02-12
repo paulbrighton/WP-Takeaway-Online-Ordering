@@ -30,7 +30,7 @@
       .card {
         border: 1px solid $white;
         border-radius: 5px;
-        padding: 35px 25px 40px;
+        padding: 35px 25px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -43,13 +43,14 @@
           display: flex;
           flex-direction: column;
           flex: 1 1 auto;
-          margin-bottom: 30px;
+          margin-bottom: 15px;
         }
         &-links {
           margin-top: auto;
           display: flex;
           justify-content: center;
           align-items: center;
+          min-height: 50px;
 
           p {
             margin-bottom: 0;
