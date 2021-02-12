@@ -4,16 +4,43 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+
+  &__overlay {
+    background: rgba($color: #000000, $alpha: 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    position: relative;
+
+    &--menu {
+      background: rgba($color: #000000, $alpha: 0.4);
+    }
+
+    &--contact {
+      background: rgba($color: #000000, $alpha: 0.5);
+    }
+  }
 
   &__text {
     color: $white;
     width: 100%;
-    padding: 0 12%;
+    padding: 0 12% 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     @media (max-width: 1023px) {
       align-items: center;
       text-align: center;
+    }
+    @media (max-width: 959px) {
+      .c-hero__text {
+        justify-content: center;
+        padding: 0;
+      }
     }
 
     &-top {
@@ -26,19 +53,13 @@
       font-size: rem-calc(24);
       margin-top: 20px;
       margin-bottom: 0;
-      @include font-bold;
+      @include font-body-bold;
+      hyphens: manual;
     }
 
     &-btn {
       font-size: 1.125rem;
       margin-top: 35px;
     }
-  }
-}
-
-@media only screen and (max-width: 959px) {
-  .c-hero__text {
-    justify-content: center;
-    padding: 0;
   }
 }
