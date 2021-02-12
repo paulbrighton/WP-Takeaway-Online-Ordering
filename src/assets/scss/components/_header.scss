@@ -44,6 +44,7 @@
       background: transparent;
       padding: 0;
       color: $brand;
+      @include font-body;
       text-transform: capitalize !important;
       &:hover {
         color: $brand-red;

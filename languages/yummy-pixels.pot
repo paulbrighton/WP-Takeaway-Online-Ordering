@@ -1,4 +1,4 @@
-# Copyright (C) 2020 yummy-pixels
+# Copyright (C) 2021 yummy-pixels
 # This file is distributed under the same license as the yummy-pixels package.
 msgid ""
 msgstr ""
@@ -508,6 +508,10 @@ msgid "Primary Menu"
 msgstr ""
 
 #: lib/navigation.php:6
+msgid "Component Menu"
+msgstr ""
+
+#: lib/navigation.php:7
 msgid "Footer Menu"
 msgstr ""
 

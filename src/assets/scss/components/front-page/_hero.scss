@@ -7,7 +7,7 @@
   position: relative;
 
   &__overlay {
-    background: rgba($color: #000000, $alpha: 0.3);
+    background: rgba($color: #000000, $alpha: 0.2);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -50,7 +50,7 @@
 
     &-middle {
       max-width: 300px;
-      font-size: rem-calc(24);
+      font-size: rem-calc(20);
       margin-top: 20px;
       margin-bottom: 0;
       @include font-body-bold;
