@@ -20,6 +20,9 @@ a .glf-btn-basic {
   border-radius: 5px;
   text-decoration: none;
   text-transform: uppercase;
+  &:hover {
+    color: $black;
+  }
 }
 
 .c-button--gradient {

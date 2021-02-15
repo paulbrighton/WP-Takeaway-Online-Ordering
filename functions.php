@@ -83,3 +83,5 @@ function add_defer_attribute( $tag, $handle ) {
   return $tag;
 }
 add_filter( 'script_loader_tag', 'add_defer_attribute', 10, 2 );
+
+add_filter('wpcf7_autop_or_not', '__return_false');

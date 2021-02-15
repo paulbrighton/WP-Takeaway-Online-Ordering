@@ -64,6 +64,7 @@ $fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';
 @import './components/posts/post';
 
 // Contact Components
+@import './components/contact/contact';
 @import './components/contact/contact-form-7.scss';
 @import './components/contact/contact-form';
 
@@ -77,4 +78,9 @@ $fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';
 @import './components/slider';
 
 // Restaurant Components
-@import './gloria-food/menu'
+@import './gloria-food/menu';
+
+.menu-page-button {
+  margin-bottom: 70px;
+  text-align: center;
+}

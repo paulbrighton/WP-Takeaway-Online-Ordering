@@ -11,7 +11,13 @@
   </div>
 
   <div class="o-container">
+    <div class="c-menu__heading">
+      <h2>Menu</h2>
+    </div>
     <?php echo do_shortcode('[restaurant-full-menu ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]') ?>
+    <div class="menu-page-button">
+      <?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?>
+    </div>
   </div>
 </div>
 

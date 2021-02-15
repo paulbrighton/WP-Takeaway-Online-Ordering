@@ -22,3 +22,8 @@ $(document).ready(() => {
     })
   }
 })
+
+// Disabled form submit button for CF7
+$(document).ready(() => {
+  $('#form-submit').prop('disabled', true)
+})
