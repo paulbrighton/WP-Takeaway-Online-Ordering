@@ -1,10 +1,10 @@
 import $ from 'jquery'
 import './components/navigation/hamburger-nav'
 import './components/navigation/navigation'
-import 'slick-carousel'
-import './components/aos'
-import './components/accordion'
-import './components/slider'
+// import 'slick-carousel'
+// import './components/aos'
+// import './components/accordion'
+// import './components/slider'
 import './components/image-grid-text'
 
 $(document).ready(() => {
