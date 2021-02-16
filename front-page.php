@@ -6,7 +6,7 @@
       <div class="c-hero__text">
         <h1 class="c-hero__text-top"><?php the_field('home_hero_text_top'); ?></h1>
         <p class="c-hero__text-middle"><?php the_field('home_hero_text_middle'); ?></p>
-        <div class="c-hero__text-btn"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
+        <div class="c-hero__text-btn glf-btn-basic-gradient"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
       </div>
     </div>
   </div>
@@ -15,7 +15,7 @@
     <h2><?php the_field('welcome_title'); ?></h2>
     <p><?php the_field('welcome_paragraph_top'); ?></p>
     <p><?php the_field('welcome_paragraph_bottom'); ?></p>
-    <div class="c-front-page__welcome-btn"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
+    <div class="c-front-page__welcome-btn glf-btn-basic-gradient"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
   </div>
 
   <div class="c-front-page__ordering-options">
@@ -28,7 +28,7 @@
             <p><?php the_field('order_online_description'); ?></p>
           </div>
           <div class="card-links">
-            <div class="card-online-btn"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
+            <div class="card-online-btn glf-btn-basic-gradient"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
           </div>
         </div>
 
@@ -69,10 +69,10 @@
           echo wp_get_attachment_image($image, $size);
         }
         ?>
-        <div class="our-food-overlay">
+        <div class="our-food-overlay our-food-overlay--main">
           <div class="our-food-overlay-text">
             <h3 class="our-food-overlay-text-title food-main"><?php the_field('main_dishes_title') ?></h3>
-            <div class="our-food-overlay-text-btn food-main-btn"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
+            <div class="our-food-overlay-text-btn food-main-btn glf-btn-basic-gradient"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
           </div>
         </div>
       </div>
@@ -85,10 +85,10 @@
           echo wp_get_attachment_image($image, $size);
         }
         ?>
-        <div class="our-food-overlay">
+        <div class="our-food-overlay our-food-overlay--dim-sum">
           <div class="our-food-overlay-text">
-            <h3 class="our-food-overlay-text-title"><?php the_field('dim_sum_title') ?></h3>
-            <div class="our-food-overlay-text-btn c-front-page__our-food__card-btn"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
+            <h3 class="our-food-overlay-text-title food-dim-sum"><?php the_field('dim_sum_title') ?></h3>
+            <div class="our-food-overlay-text-btn food-dim-sum-btn glf-btn-basic-gradient"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
           </div>
         </div>
       </div>
@@ -101,10 +101,10 @@
           echo wp_get_attachment_image($image, $size);
         }
         ?>
-        <div class="our-food-overlay">
+        <div class="our-food-overlay our-food-overlay--thai">
           <div class="our-food-overlay-text">
-            <h3 class="our-food-overlay-text-title"><?php the_field('thai_dishes_title') ?></h3>
-            <div class="our-food-overlay-text-btn c-front-page__our-food__card-btn"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
+            <h3 class="our-food-overlay-text-title food-thai"><?php the_field('thai_dishes_title') ?></h3>
+            <div class="our-food-overlay-text-btn food-thai-btn glf-btn-basic-gradient"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
           </div>
         </div>
       </div>
@@ -127,14 +127,15 @@
         }
         ?>
       <?php endif; ?>
-        <div class="our-food-overlay">
+        <div class="our-food-overlay our-food-overlay--appetisers">
           <div class="our-food-overlay-text">
-            <h3 class="our-food-overlay-text-title"><?php the_field('appetisers_title') ?></h3>
-            <div class="our-food-overlay-text-btn c-front-page__our-food__card-btn"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
+            <h3 class="our-food-overlay-text-title food-appetisers"><?php the_field('appetisers_title') ?></h3>
+            <div class="our-food-overlay-text-btn food-appetisers-btn glf-btn-basic-gradient"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="our-food-card our-food__dishes-noodles">
       <?php if (wp_is_mobile()) : ?>
         <?php
@@ -154,13 +155,19 @@
         ?>
       <?php endif; ?>
 
-      <div class="our-food-overlay">
+      <div class="our-food-overlay our-food-overlay--noodles">
         <div class="our-food-overlay-text">
-          <h3 class="our-food-overlay-text-title"><?php the_field('noodle_dishes_title') ?></h3>
-          <div class="our-food-overlay-text-btn c-front-page__our-food__card-btn"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
+          <h3 class="our-food-overlay-text-title food-noodles"><?php the_field('noodle_dishes_title') ?></h3>
+          <div class="our-food-overlay-text-btn food-noodles-btn glf-btn-basic-gradient"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
         </div>
       </div>
     </div>
+
+  
+      <div class="our-food-footer-btn">
+        <div class="glf-btn-basic-gradient"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
+      </div>
+
   </div>
 
   <div class="c-front-page__reviews">
@@ -215,7 +222,7 @@
   </div>
 
   <div class="c-front-page__footer-order">
-  <div class="c-front-page__footer-order-btn"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
+  <div class="c-front-page__footer-order-btn glf-btn-basic-gradient"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
   </div>
 
   <?php get_footer(); ?>

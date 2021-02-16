@@ -1,6 +1,9 @@
 .c-footer {
   background: $black;
   color: $white;
+  h5 {
+    font-size: 1.5rem;
+  }
 
   p {
     margin-bottom: 0.5rem;
@@ -65,8 +68,11 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .c-footer {
+    h5 {
+      padding-top: 20px;
+    }
     &__top {
   
       h5 {

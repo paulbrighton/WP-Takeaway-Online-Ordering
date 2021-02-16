@@ -12,34 +12,79 @@
 }
 
 a .glf-btn-basic {
-  background: $brand;
-  color: #252525;
+  max-width: 250px;
+  color: $white;
   @include font-body-bold;
-  padding: 10px 25px;
   text-align: center;
   border-radius: 5px;
   text-decoration: none;
   text-transform: uppercase;
-  &:hover {
-    color: $white;
-  }
 }
 
-.c-button--gradient {
-  display: block;
-  width: 300px;
-  max-width: 300px;
-  margin-top: 10px;
-  position: relative;
-  padding: 5px 30px;
-  border-radius: 10px;
-  font-weight: 600;
+// a .glf-btn-basic-gradient, .glf-btn-basic-gradient {
+//   max-width: 225px;
+//   background-image: linear-gradient(
+//     to right,
+//     $brand 0%,
+//     $brand-red 35%,
+//     $brand-red 65%,
+//     $brand 100%
+//   );
+//   padding: 10px 35px;
+//   text-align: center;
+//   transition: 0.7s;
+//   background-size: 200% auto;
+//   font-size: 1.125rem;
+//   color: $white;
+//   border-radius: 10px;
+//   display: block;
+//   text-decoration: none;
 
-  border: 1px solid $brand;
-  background-image: linear-gradient(-180deg, $brand-darker 0%, $brand 100%);
+//   &:hover {
+//     background-position: right center;
+//   }
+// }
+
+a .glf-btn-basic-gradient, .glf-btn-basic-gradient   {
+  max-width: 225px;
+  background-size: 300% auto;
+  background-image: linear-gradient(
+        to top,
+        $brand,
+        $brand-red
+      );
+      padding: 10px 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+  position: relative;
+  z-index: 100;
+  
+  &:before {
+    border-radius: inherit;
+    background-image: linear-gradient(
+        to top,
+        $brand-red,
+        $brand
+      );
+    content: '';    
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: opacity 0.45s;
+  }
+  
   &:hover {
-    cursor: pointer;
-    background-image: linear-gradient(-180deg, $brand 0%, $brand-darker 100%);
-    color: $white;
+    &:before {
+      opacity: 1;
+    }
   }
 }

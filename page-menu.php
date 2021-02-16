@@ -5,7 +5,7 @@
       <div class="c-hero__text">
         <h1 class="c-hero__text-top"><?php the_field('menu_hero_text_top'); ?></h1>
         <p class="c-hero__text-middle"><?php the_field('menu_hero_text_middle'); ?></p>
-        <div class="c-hero__text-btn"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
+        <div class="c-hero__text-btn glf-btn-basic-gradient"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
       </div>
     </div>
   </div>
@@ -16,7 +16,8 @@
     </div>
     <?php echo do_shortcode('[restaurant-full-menu ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]') ?>
     <div class="menu-page-button">
-      <?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?>
+      <div class="glf-btn-basic-gradient"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
+      
     </div>
   </div>
 </div>

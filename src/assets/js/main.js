@@ -5,7 +5,7 @@ import 'slick-carousel'
 import './components/aos'
 import './components/accordion'
 import './components/slider'
-// import webpackStream from 'webpack-stream'
+import './components/image-grid-text'
 
 $(document).ready(() => {
   $('.c-post__gallery').slick({
@@ -26,13 +26,4 @@ $(document).ready(() => {
 // Disabled form submit button for CF7
 $(document).ready(() => {
   $('#form-submit').prop('disabled', true)
-})
-
-// Swap text for button on Our Food cards
-$('.our-food-overlay-main').hover(function () {
-  $('.food-main').addClass('over-text-none')
-  $('.food-main-btn').addClass('over-text-block')
-}, function () {
-  $('.food-main').removeClass('over-text-none')
-  $('.food-main-btn').removeClass('over-text-block')
 })
