@@ -27,3 +27,12 @@ $(document).ready(() => {
 $(document).ready(() => {
   $('#form-submit').prop('disabled', true)
 })
+
+// Swap text for button on Our Food cards
+$('.our-food-overlay-main').hover(function () {
+  $('.food-main').addClass('over-text-none')
+  $('.food-main-btn').addClass('over-text-block')
+}, function () {
+  $('.food-main').removeClass('over-text-none')
+  $('.food-main-btn').removeClass('over-text-block')
+})

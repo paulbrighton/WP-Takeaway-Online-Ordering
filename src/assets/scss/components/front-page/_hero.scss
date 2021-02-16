@@ -54,7 +54,7 @@
       margin-top: 20px;
       margin-bottom: 0;
       @include font-body-bold;
-      hyphens: manual;
+      hyphens: none;
     }
 
     &-btn {
