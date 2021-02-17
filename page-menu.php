@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="c-menu">
-  <div style="background: url('<?php the_field('menu_hero_image'); ?>') center right; background-size: cover; background-repeat: no-repeat;" class="c-hero">
+  <div style="background: #0D0A08 url('<?php the_field('menu_hero_image'); ?>') center right; background-size: cover; background-repeat: no-repeat;" class="c-hero">
     <div class="c-hero__overlay c-hero__overlay--menu">
       <div class="c-hero__text">
         <h1 class="c-hero__text-top"><?php the_field('menu_hero_text_top'); ?></h1>

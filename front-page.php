@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 <div class="c-front-page">
 
-  <div style="background: url('<?php the_field('home_hero_image'); ?>') center center; background-size: cover; background-repeat: no-repeat;" class="c-hero">
+  <div style="background: #0D0A08 url('<?php the_field('home_hero_image'); ?>') center center; background-size: cover; background-repeat: no-repeat;" class="c-hero">
     <div class="c-hero__overlay">
-      <div class="c-hero__text">
+      <div style="width: 100%; height: auto;" class="c-hero__text">
         <h1 class="c-hero__text-top"><?php the_field('home_hero_text_top'); ?></h1>
         <p class="c-hero__text-middle"><?php the_field('home_hero_text_middle'); ?></p>
         <div class="c-hero__text-btn glf-btn-basic-gradient"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>
