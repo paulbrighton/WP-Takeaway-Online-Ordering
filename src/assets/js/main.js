@@ -7,22 +7,6 @@ import './components/navigation/navigation'
 // import './components/slider'
 import './components/image-grid-text'
 
-$(document).ready(() => {
-  $('.c-post__gallery').slick({
-    'arrows': false,
-    'adaptiveHeight': true
-  })
-
-  $('.most_recent_widget').slick()
-  if (wp.customize && wp.customize.selectiveRefresh) {
-    wp.customize.selectiveRefresh.bind('partial-content-rendered', (placement) => {
-      if (placement.partial.widgetIdParts && placement.partial.widgetIdParts.idBase === '_themename_most_recent_widget') {
-        placement.container.find('.most_recent_widget').slick()
-      }
-    })
-  }
-})
-
 // Disabled form submit button for CF7
 $(document).ready(() => {
   $('#form-submit').prop('disabled', true)
