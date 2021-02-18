@@ -13,6 +13,7 @@
 
   <div class="c-front-page__welcome u-flex u-flex-direction-column u-align-middle">
     <h2><?php the_field('welcome_title'); ?></h2>
+    <p class="c-front-page__welcome-warning"><span>Note: </span>This is a demo takeaway website and no orders will be fulfilled. If you would like a similar website for your business, please contact <a href="https://www.paulbrighton.com/">Paul Brighton</a>.</p>
     <p><?php the_field('welcome_paragraph_top'); ?></p>
     <p><?php the_field('welcome_paragraph_bottom'); ?></p>
     <div class="c-front-page__welcome-btn glf-btn-basic-gradient"><?php echo do_shortcode('[restaurant-menu-and-ordering class="glf-btn-basic" ruid="1750f287-d944-4c01-8f21-68c91ed10d5c"]'); ?></div>

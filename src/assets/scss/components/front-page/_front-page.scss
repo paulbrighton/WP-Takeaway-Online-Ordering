@@ -1,5 +1,31 @@
 .c-front-page {
   &__welcome {
+
+    &-warning {
+
+      &--contact {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &-p {
+          max-width: 700px;
+          @include font-body-bold;
+          margin-bottom: 35px;
+          a {
+            color: $brand-red;
+          }
+        }
+      }
+      span {
+        color: $danger-colour;
+      }
+
+      a {
+        &:hover {
+          color: $black !important;
+        }
+      }
+    }
     padding: 100px 50px;
     @media (max-width: 959px) {
       padding: 70px 20px;
