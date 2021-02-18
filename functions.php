@@ -11,6 +11,7 @@ require_once('lib/comment-callback.php');
 require_once('lib/images.php');
 require_once('lib/translations.php');
 require_once('lib/metaboxes.php');
+require_once('lib/preload.php');
 
 function add_file_types_to_uploads($file_types){
   $new_filetypes = array();
