@@ -12,8 +12,8 @@
 
   <div class="o-container">
     <div class="c-menu__heading">
-      <div class="c-front-page__welcome-warning--contact">
-        <p class="c-front-page__welcome-warning c-front-page__welcome-warning--contact-p"><span>Note: </span>This is a demo takeaway website and no orders will be fulfilled. If you would like a similar website for your business, please contact <a href="https://www.paulbrighton.com/">Paul Brighton</a>.</p>
+      <div class="c-front-page__welcome-warning--menu">
+        <p class="c-front-page__welcome-warning c-front-page__welcome-warning--menu-p"><span>Note: </span>This is a demo takeaway website and no orders will be fulfilled. If you would like a similar website for your business, please contact <a href="https://www.paulbrighton.com/">Paul Brighton</a>.</p>
       </div>
       <h2>Menu</h2>
     </div>

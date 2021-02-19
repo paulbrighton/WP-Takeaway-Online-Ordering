@@ -3,10 +3,11 @@
 
     &-warning {
 
-      &--contact {
+      &--contact, &--menu {
         width: 100%;
         display: flex;
         justify-content: center;
+        padding: 0 20px;
         &-p {
           max-width: 700px;
           @include font-body-bold;
@@ -15,6 +16,10 @@
             color: $brand-red;
           }
         }
+      }
+
+      &--menu {
+        padding: 0 10px;
       }
       span {
         color: $danger-colour;
